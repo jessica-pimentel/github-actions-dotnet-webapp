@@ -22,15 +22,19 @@ jobs:
 
       - name: Restore dependencies
         run: dotnet restore
+        working-directory: github4women
 
       - name: Build the project
         run: dotnet build --no-restore --configuration Release
+        working-directory: github4women
 
       - name: Run tests
         run: dotnet test --no-build --verbosity normal
+        working-directory: github4women
 
       - name: Run custom script
         run: |
           echo "Running custom script..."
           dotnet --version
           echo "Custom script completed."
+        working-directory: github4women
