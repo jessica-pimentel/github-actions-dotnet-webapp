@@ -1,4 +1,4 @@
-# Repositório WorkFlow com Github Actions
+# WorkFlow com Github Actions
 
 ## Linguagem de YAML:
   - Usada para definir a estrutura e as configurações do arquivo de workflow.
